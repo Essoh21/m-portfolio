@@ -1,21 +1,12 @@
 "use client";
-import React, { useEffect } from "react";
 import SectionHeading from "./SectionHeading";
-import { useActiveSectionContext } from "./Header";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import useSectionInView from "@/app/lib/useSectionInView";
 export default function About() {
-  const { ref, inView } = useInView({
-    threshold: 0.9,
+  const { ref } = useSectionInView({
+    activeSectionName: "About",
+    thresHold: 0.9,
   });
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
-  useEffect(() => {
-    const isInViewAndLastClikOlderThanOneSecond =
-      inView && Date.now() - timeOfLastClick > 1000;
-    if (isInViewAndLastClikOlderThanOneSecond) {
-      setActiveSection("About");
-    }
-  }, [inView, timeOfLastClick]);
 
   return (
     <motion.section

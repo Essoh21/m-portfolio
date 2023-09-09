@@ -5,21 +5,13 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "./Header";
+import useSectionInView from "@/app/lib/useSectionInView";
 
 export default function Intro() {
-  const { ref, inView } = useInView({
-    threshold: 0.9,
+  const { ref } = useSectionInView({
+    activeSectionName: "Home",
+    thresHold: 0.9,
   });
-  const { setActiveSection } = useActiveSectionContext();
-  useEffect(() => {
-    if (inView) {
-      setActiveSection("Home");
-    }
-  }, [inView]);
-
   return (
     <section
       ref={ref}

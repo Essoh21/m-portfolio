@@ -1,5 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { FaChalkboardTeacher } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
@@ -32,28 +33,27 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Togo",
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
+  },
+  {
+    title: "graduate Odin foundations and  full stack javaScript",
+    location: "Online",
+    description:
+      "I graduated after 2 years of studying. I work on more than 50 production Projects.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021-2023",
+  },
+  {
+    title: "Mathematics teacher",
+    location: "Togo",
+    description: "I teached mathematics in High school",
+    icon: React.createElement(FaChalkboardTeacher),
+    date: "2014 - 2023",
   },
 ] as const;
 
@@ -141,14 +141,14 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
+  "Jest",
+  "Vitest",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
+  "SQL",
   "Python",
-  "Django",
+  "Pandas",
+  "Tensorflow",
+  "Figma",
   "Framer Motion",
 ] as const;

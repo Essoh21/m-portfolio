@@ -1,16 +1,25 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-export default function useSectionInView() {
+import { useActiveSectionContext } from "@/components/Header";
+import type { ActiveSectionType } from "./types";
+export default function useSectionInView({
+  activeSectionName,
+  thresHold,
+}: {
+  activeSectionName: ActiveSectionType;
+  thresHold: number;
+}) {
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: thresHold,
   });
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
   useEffect(() => {
     const isInViewAndLastClikOlderThanOneSecond =
       inView && Date.now() - timeOfLastClick > 1000;
     if (isInViewAndLastClikOlderThanOneSecond) {
-      setActiveSection("Projects");
+      setActiveSection(activeSectionName);
     }
   }, [inView, timeOfLastClick]);
+  return { ref };
 }
