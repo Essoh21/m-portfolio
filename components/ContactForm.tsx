@@ -58,7 +58,10 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="mt-10 flex flex-col gap-2" onSubmit={handleSubmit}>
+    <form
+      className="mt-10 flex flex-col gap-2 dark:text-black"
+      onSubmit={handleSubmit}
+    >
       <input
         name="email"
         onChange={handleChange}
@@ -67,7 +70,9 @@ export default function ContactForm() {
         maxLength={500}
         required
         placeholder="Your email"
-        className="h-14 rounded-lg px-4 border bg-white border-black/10"
+        className="h-14 rounded-lg px-4 border bg-white dark:bg-opacity-80
+        dark:focus:bg-opacity-100 border-black/10 transition-all dark:outline-none
+        "
       />
       <textarea
         name="message"
@@ -75,7 +80,8 @@ export default function ContactForm() {
         value={formData.message}
         placeholder="Your message"
         required
-        className="h-52 px-4 p-2 rounded-lg border-black/10"
+        className="h-52 px-4 p-2 bg-white dark:bg-opacity-80 dark:outline-none 
+        dark:focus:bg-opacity-100 rounded-lg border border-black/10 transition-all"
       />
       <div
         className={clsx(
@@ -91,7 +97,7 @@ export default function ContactForm() {
       <button
         disabled={sendingMessage}
         type="submit"
-        className="group h-[3rem] w-[8rem] self-center flex gap-2 items-center
+        className="group dark:bg-white dark:bg-opacity-10 h-[3rem] w-[8rem] self-center flex gap-2 items-center
         bg-gray-900 justify-center text-white rounded-full hover:bg-gray-950
         outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105
         disabled:scale-100 disabled:bg-opacity-70"

@@ -30,12 +30,12 @@ export default function Contact() {
       className="mb-20 sm:mb-28 w-[min(100%, 38rem)] text-center"
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700  -mt-6">
+      <p className="text-gray-700  -mt-6 dark:text-white/80">
         Please contact me directely at{" "}
         <a className="underline" href="mailto:essoh.alou@gmail.com">
           essoh.alou@gmail.com
         </a>{" "}
-        or through this form;
+        or through this form:
       </p>
       <ContactForm />
     </motion.section>
