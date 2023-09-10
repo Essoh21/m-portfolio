@@ -11,7 +11,11 @@ export default function Projects() {
     thresHold: 0.2,
   });
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section
+      ref={ref}
+      id="projects"
+      className="scroll-mt-28 mb-28 max-w-[98%] box-border"
+    >
       <SectionHeading>My Projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (

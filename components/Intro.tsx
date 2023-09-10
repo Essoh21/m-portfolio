@@ -18,7 +18,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[45rem] 
+      className="mb-28 max-w-[45rem] mx-auto
      sm:mb-0 text-center scroll-mt-36
     "
     >
@@ -51,12 +51,17 @@ export default function Intro() {
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        className="mb-10 mt-4 px-4 text-md font-medium 
+        className="mb-10 mt-4  px-4 text-md font-medium 
       !leading-[1.5] sm:text-lg"
       >
         <span className="font-bold"> Hello, I'm Essohanam.</span> I'm a{" "}
         <span className="font-bold">full-stack javascript developer</span> with
-        03 years of experience. I enjoy solving problems using computers.
+        <strong> 07+ years</strong> of experience with technology and{" "}
+        <strong>3 years</strong> experience
+        <strong> javascript </strong>. I enjoy using my{" "}
+        <strong>creation </strong>
+        and <strong className="italic">problem solving</strong> power with my
+        computer.
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -73,7 +78,7 @@ export default function Intro() {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
-          className="group bg-gray-900 text-white px-7 py-3 flex 
+          className="group text-sm sm:text-lg  bg-gray-900 text-white px-7 py-3 flex 
            gap-2 rounded-full items-center outline-none focus:scale-110
            hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
@@ -85,7 +90,7 @@ export default function Intro() {
           />
         </Link>
         <a
-          className="group bg-white text-gray-900 px-7 py-3 flex 
+          className="group bg-white text-sm  sm:text-lg text-gray-900 px-7 py-3 flex 
            gap-2 rounded-full items-center outline-none focus:scale-110
            hover:scale-110  active:scale-105 transition cursor-pointer
            border border-black/10 dark:bg-white/10 dark:text-white"
@@ -97,7 +102,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white text-[1.4rem] text-gray-700 p-4 flex 
-           gap-2 rounded-full items-center focus:scale-110
+           gap-2 rounded-full items-center justify-center focus:scale-110 
            hover:scale-110  hover:text-gray-950 active:scale-105 transition cursor-pointer
            border border-black/10 dark:text-white/60 dark:bg-white/10"
           href="#"
