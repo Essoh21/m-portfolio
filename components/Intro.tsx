@@ -6,12 +6,14 @@ import Link from "next/link";
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import useSectionInView from "@/app/lib/useSectionInView";
+import { useActiveSectionContext } from "./Header";
 
 export default function Intro() {
   const { ref } = useSectionInView({
     activeSectionName: "Home",
     thresHold: 0.9,
   });
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -66,7 +68,11 @@ export default function Intro() {
        gap-2 px-4 text-lg font-medium"
       >
         <Link
-          href="#contanct"
+          href="#contact"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
           className="group bg-gray-900 text-white px-7 py-3 flex 
            gap-2 rounded-full items-center outline-none focus:scale-110
            hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
