@@ -86,9 +86,10 @@ export default function ContactForm() {
       <div
         className={clsx(
           `
-         text-red-700 mb-2 text-sm my-4 max-w-full text-center`,
+         mb-2 text-sm my-4 max-w-full text-center`,
           {
             "text-green-700": submissionFeedBack === successMessage,
+            "text-red-700": submissionFeedBack !== successMessage,
           }
         )}
       >
