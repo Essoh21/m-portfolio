@@ -35,7 +35,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/images/mawaba.PNG"
+              src="/images/profilePortfolio.jpg"
               width={120}
               height={120}
               quality={95}
@@ -56,8 +56,8 @@ export default function Intro() {
       >
         <span className="font-bold"> Hello, I'm Essohanam.</span> I'm a{" "}
         <span className="font-bold">full-stack javascript developer</span> with
-        <strong> 07+ years</strong> of experience with technology and{" "}
-        <strong>3 years</strong> experience
+        <strong> 07+ years</strong> of experience with technology including{" "}
+        <strong>3 years</strong> experience with
         <strong> javascript </strong>. I enjoy using my{" "}
         <strong>creation </strong>
         and <strong className="italic">problem solving</strong> power with my
@@ -100,21 +100,21 @@ export default function Intro() {
           DownLoad CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
-        <a
+        {/* <a
           className="bg-white text-[1.4rem] text-gray-700 p-4 flex 
            gap-2 rounded-full items-center justify-center focus:scale-110 
            hover:scale-110  hover:text-gray-950 active:scale-105 transition cursor-pointer
            border border-black/10 dark:text-white/60 dark:bg-white/10"
-          href="#"
+          href="https://www.linkedin.com/in/essohanam-alou-4841b0125/"
         >
           <BsLinkedin />
-        </a>
+        </a> */}
         <a
           className="bg-white text-gray-700  text-[1.4rem] p-4 flex 
            gap-2 rounded-full items-center focus:scale-110
            hover:scale-110 hover:text-gray-950  active:scale-105 transition cursor-pointer
            border border-black/10  dark:text-white/60 dark:bg-white/10"
-          href=""
+          href="https://github.com/Essoh21?tab=overview&from=2023-09-01&to=2023-09-09"
         >
           <BsGithub />
         </a>
