@@ -1,6 +1,6 @@
 # Modern Portfolio
 
-This README provides information about the "m-portfolio" project, including how to set it up, run it, and make necessary configurations. Please follow the instructions below carefully.
+This provides information about the "m-portfolio" project, including how to set it up, run it, and make necessary configurations. Please follow the instructions below carefully.
 
 ## Table of Contents
 
@@ -11,8 +11,7 @@ This README provides information about the "m-portfolio" project, including how 
   - [Configuration](#configuration)
 - [Usage](#usage)
 - [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
+- [References](#References)
 
 ## Project Overview
 
