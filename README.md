@@ -1,6 +1,10 @@
 # Modern Portfolio
 
-This provides information about the "m-portfolio" project, including how to set it up, run it, and make necessary configurations. Please follow the instructions below carefully.
+<!--
+  Title: My public portfolio
+-->
+
+This provides information about [my public portfolio](https://essohanam-alou.vercel.app/) project, including how to set it up, run it, and make necessary configurations. Please follow the instructions below carefully.
 
 ## Table of Contents
 
