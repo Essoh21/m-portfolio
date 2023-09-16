@@ -1,7 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaChalkboardTeacher } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
@@ -134,7 +133,7 @@ export const projectsData = [
       "Postman",
     ],
     imageUrl: "/images/achDashboard.png",
-    liveLink: "https://ach-club-v.onrender.com/",
+    liveLink: "https://github.com/Essoh21/ach-club-v",
   },
   {
     title: "CV-creator",
@@ -200,6 +199,7 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Redis",
   "Git",
   "Tailwind",
   "Jest",
