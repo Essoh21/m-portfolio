@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import Link from "next/link";
 type ProjectProps = (typeof projectsData)[number];
 function Project({
   title,
@@ -19,7 +18,7 @@ function Project({
     offset: ["0 1", "1.33 1"],
   });
 
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <motion.div
