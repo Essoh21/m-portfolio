@@ -36,8 +36,8 @@ export default function Intro() {
           >
             <Image
               src="/images/profilePortfolio.jpg"
-              width={120}
-              height={120}
+              width={300}
+              height={300}
               quality={95}
               priority={true}
               alt="Essoh"
