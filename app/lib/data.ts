@@ -61,6 +61,7 @@ export const experiencesData = [
     description:
       " I work on more than 50 production Projects including REST APIs, CRUD applications and MERN stack applications.",
     icon: React.createElement(LuGraduationCap),
+    date: " ",
   },
   {
     title: "Data science and Machine learning",
@@ -68,6 +69,7 @@ export const experiencesData = [
     description:
       "I learned how to use machine learning models using python and how to train machine learning models using octave and mathLab .",
     icon: React.createElement(LuGraduationCap),
+    date: " ",
   },
 
   {
