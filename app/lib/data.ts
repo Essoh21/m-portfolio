@@ -35,25 +35,32 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Togo",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "META, I develop and maintain  web apps for students and teachers authentications and registrations .",
     icon: React.createElement(CgWorkAlt),
-    date: "2023 - present",
+    date: "2020 - present",
+  },
+  {
+    title: "Teacher",
+    location: "Togo",
+    description:
+      "META, I teach Mathematics and computer science courses in high school and BTS.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - present",
+  },
+  {
+    title: "Teacher",
+    location: "Togo",
+    description:
+      "MEPSTA and ISTM, I teach Mathematics, statistics and Probabilities in high school and BTS.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2014 - 2016 and 2018-2020",
   },
   {
     title: "graduate Odin foundations and  full stack javaScript curriculum",
     location: "The Odin Project",
     description:
-      "I graduated after 2 years of studying. I work on more than 50 production Projects including REST APIs, CRUD applications and MERN stack applications.",
+      " I work on more than 50 production Projects including REST APIs, CRUD applications and MERN stack applications.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021-2023",
-  },
-  {
-    title: "full-stack web development using php,  javascript, html and css",
-    location: "W3Scools",
-    description:
-      "I mastered php fondamentals and some experience with  framework like Laravel and some basic knowledge on javascript jQuery library and Mys .",
-    icon: React.createElement(LuGraduationCap),
-    date: "2020-2021",
   },
   {
     title: "Data science and Machine learning",
@@ -61,15 +68,8 @@ export const experiencesData = [
     description:
       "I learned how to use machine learning models using python and how to train machine learning models using octave and mathLab .",
     icon: React.createElement(LuGraduationCap),
-    date: "2018-2020",
   },
-  {
-    title: "Mathematics teacher",
-    location: "Togo and Benin",
-    description: "I teached mathematics in High school",
-    icon: React.createElement(FaChalkboardTeacher),
-    date: "2014 - 2023",
-  },
+
   {
     title: "Master Degree of Fundamental Mathematics and Applications",
     location: "IMSP-Benin",
@@ -78,9 +78,10 @@ export const experiencesData = [
     date: "2016 - 2018",
   },
   {
-    title: "License of Mathematics",
+    title: "License of Mathematics ",
     location: " UK-Togo",
-    description: "I strengthened my background in mathematics",
+    description:
+      "I ended my degree with an internship at DPS kara where I collected and analysed CPN data",
     icon: React.createElement(FaChalkboardTeacher),
     date: "2011 - 2014",
   },
@@ -89,10 +90,12 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Ach-club",
-    description: ` A public full-stack web app for Achievers to share their wins. Users must Signup,
+    description: ` A  full-stack web app for Achievers to share their wins. Users must Signup,
        verify their emails and authenticate themselves using their pseudo and password. Authenticated users 
        can update their profiles or view posts but only members can  post. Only admin can view all users data 
-       and delete a post or a user if necessary.
+       and delete a post or a user if necessary. I applied MVC(Model-View-Controller)  design pattern, 
+       CRUD(Create-Read-Update-Delete) operations with mongoose and MongoDb and authentication and authorization 
+        using passport.js .
       `,
     tags: [
       "Nodejs",
@@ -111,14 +114,18 @@ export const projectsData = [
       "pug",
     ],
     imageUrl: "/images/ach-club.png",
-    liveLink: "https://ach-club.onrender.com/",
+    liveLink: "https://github.com/Essoh21/Ach-club",
   },
   {
     title: "Ach-club-v",
     description: `This is an advance version of Ach-club. Users can use credentials or their
        existing google account for authentication. Authenticated users can post or comment
         a post or like a post or chat with other users in a post comments. Only the admin can 
-        view users Data and delete a post, a comment, a like or a user if necessary`,
+        view users Data and delete a post, a comment, a like or a user if necessary.
+        I applied Authentication and authorization using NextAuth.js and bidirectional
+         communication protocol with websocket.
+        
+        `,
     tags: [
       "Nodejs",
       "express",

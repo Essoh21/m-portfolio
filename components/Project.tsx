@@ -78,7 +78,7 @@ function Project({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsBoxArrowUpRight /> Live Preview
+            <BsBoxArrowUpRight /> Repository
           </a>
         </div>
       </section>

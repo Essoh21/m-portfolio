@@ -54,14 +54,14 @@ export default function Intro() {
         className="mb-10 mt-4  px-4 text-md font-medium 
       !leading-[1.5] sm:text-lg"
       >
-        <span className="font-bold"> Hello, I'm Essohanam.</span> I'm a{" "}
-        <span className="font-bold">full-stack javascript developer</span> with
-        <strong> 07+ years</strong> of experience with technology including{" "}
-        <strong>3 years</strong> experience with
-        <strong> javascript </strong>. I enjoy using my{" "}
-        <strong>creation </strong>
-        and <strong className="italic">problem solving</strong> power with my
-        computer.
+        <span className="font-bold"> Hello, I'm Essohanam.</span> I'm
+        <span className="font-bold">
+          {" "}
+          a senior full-stack javascript developer
+        </span>{" "}
+        with a solid fondation in Mathematics. I enjoy automating{" "}
+        <strong>tasks </strong>
+        and <strong className="italic">solving problems</strong> using computer.
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
